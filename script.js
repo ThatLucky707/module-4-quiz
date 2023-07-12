@@ -5,24 +5,34 @@ var questions = [
         answer: "Variables"
     },
     {
-        question: "What does padding refer to in CSS?",
-        choices: ["Choice 1", "Choice 2", "Choice 3"],
-        answer: "Choice 1"
+        question: "In CSS, what does padding refer to?",
+        choices: ["Space around element border", "The space outside of an element", "Space inside of an element"],
+        answer: "Space inside of an element"
     },
     {
-        question: "What does Javascript essentially do?",
-        choices: ["Choice 1", "Choice 2", "Choice 3"],
-        answer: "Choice 1"
+        question: "What is the first coding language typically used when starting to develop a website?",
+        choices: ["HTML", "HTML.CSS", "Script.HTML"],
+        answer: "HTML"
     },
     {
-        question: "What does Javascript essentially do?",
-        choices: ["Choice 1", "Choice 2", "Choice 3"],
-        answer: "Choice 1"
+        question: "Considering JavaScript logic, the (===) operator will return a true Boolean value if the two values are found to be __________.",
+        choices: ["Canceling each other out", "False", "True"],
+        answer: "True"
     },
     {
-        question: "What does Javascript essentially do?",
-        choices: ["Choice 1", "Choice 2", "Choice 3"],
-        answer: "Choice 1"
+        question: "What does DOM stand for in web development?",
+        choices: ["Direct Operations Materials", "Data Outcome Model", "Document Object Model"],
+        answer: "Document Object Model"
+    },
+    {
+        question: "What does DOM stand for in web development?",
+        choices: ["Direct Operations Materials", "Data Outcome Model", "Document Object Model"],
+        answer: "Document Object Model"
+    },
+    {
+        question: "What does DOM stand for in web development?",
+        choices: ["Direct Operations Materials", "Data Outcome Model", "Document Object Model"],
+        answer: "Document Object Model"
     },
     // More questions
 ];
