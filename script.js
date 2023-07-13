@@ -58,8 +58,54 @@ function displayQuestion() {
     }
 };
 
-function guess(id, guess) {}
+//guessing
+function guess(id, guess) {
+    let button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+        displayQuestion();
+    }
+}
 
+//showing quiz progress
+function showProgress() {
+    let currentQuestionNumber = quiz.questionIndex + 1;
+    let progressElement = document.getElementById("progress");
+    progressElement.innerHTML =
+    `Question ${currentQuestionNumber} of ${quiz.question.length}`;
+}
+
+//display score
+function showScores() {
+    let quizEndHTML = 
+        `
+            <h1>Congratulations! Quiz Completed</h1>
+            <h2 id="score">Your Score: ${quiz.score} of ${quiz.question.length}</h2>
+            <div class="quiz-repeat">
+                <a href="index.html">Retake</a>
+            </div>
+        `;
+    let quizElement = document.getElementbyId("quiz");
+    quizElement.innerHTML = quizEndHTML;
+}   
+
+let questions = [
+    new Question(
+        "In JavaScript, what do we use the 'var' keyword to declare?", ["Variants", "Variables", "To link a variety of CSS style sheets to the js file", "HTML"], "Variables"
+    ),
+    new Question(
+        "In CSS, what does padding refer to?", ["Space around element border", "The space outside of an element", "The space inside of an element", "A Hrefs"], "The space inside of an element"
+    ),
+    new Question(
+        "What is the first coding language typically used when starting to develop a website?", ["HTML", "CSS", "HTML.CSS", "Java"], "HTML"
+    ),
+    new Question(
+        "Considering JavaScript logic, the (===) operator will return a true Boolean value if the two values are found to be __________.", ["Canceling each other out", "False", "True", "Zero"], "True"
+    ),
+    new Question(
+        "What does DOM stand for in web development?", ["Direct Operations Materials", "Data Outcome Manipulation", "Document Object Model", "Document Object Manipulation"], "Document Object Model"
+    ),
+]
 
 // var questions = [
 //     {
