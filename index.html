@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Coding Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexa's Coding Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Coding Quiz</h1>
-    <p id="question">Questions are placed here</p>
-    <div id="choices">
-        <!-- Put down the choices here -->
+    <div class="container">
+        <div class="quiz-box">
+            <div id="quiz">
+                <h1>Coding Quiz</h1>
+                <div class="quiz-header">
+                    <p id="progress">Question x of y</p>
+                    <p id="count-down">10</p>
+                </div>
+                <p id="question"></p>
+
+                <div class="buttons">
+                    <button class="btn" id="btn0">
+                        A. <span id="choice0"></span>
+                    </button>
+                    <button class="btn" id="btn0">
+                        B. <span id="choice1"></span>
+                    </button>
+                    <button class="btn" id="btn0">
+                        C. <span id="choice2"></span>
+                    </button>
+                    <button class="btn" id="btn0">
+                        D. <span id="choice3"></span>
+                    </button>
+                </div>
+                <hr>
+                <footer>
+                    <p>Footer</p>
+                </footer>
+            </div>
+        </div>
     </div>
-    <button id="start">Start</button>
-    <p id="timer">Time: 300</p>
-    <div id="score-container" style="display: none;">
-        <p id="score">My score: </p>
-        <input type="text" id="initials" placeholder="Enter initials to save your score">
-        <button id="save">Save Score</button>
-    </div>
-    <script src="script.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
+
+
+
+
