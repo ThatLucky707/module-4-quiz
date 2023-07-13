@@ -21,6 +21,44 @@ class Quiz {
     }
 }
 
+class Question {
+    constructor(text, choices, answer) {
+        this.text = text;
+        this.choices = choices;
+        this.answer = answer;
+    }
+
+    isCorrectAnswer(choice) {
+        return this.answer === choice;
+    }
+}
+
+
+        //show question
+function displayQuestion() {
+    if (quiz.isEnded()) {
+        showScores();
+    } else {
+
+        //show question
+        let questionElement =document.getElementById("question");
+        questionElement.innerHTML = quiz.getQuestionIndex().text;
+
+        //list choices
+        let choices = quiz.getQuestionIndex().choices;
+        for (let i=0; i < choices.length; i++) {
+            let choiceElement = document.getElementbyID("choice"
+            + i); 
+            choiceElement.innerHTML = choices[i];
+            guess("btn" + i, choices[i]);
+        }
+        
+        //show progress
+        showProgress();
+    }
+};
+
+function guess(id, guess) {}
 
 
 // var questions = [

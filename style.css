@@ -22,7 +22,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: beige
+    background-color: beige;
 }
 
 p {
@@ -31,7 +31,7 @@ p {
 }
 
 img {
-    width: 100%
+    width: 100%;
 }
 
 .container {
